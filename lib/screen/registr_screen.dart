@@ -17,7 +17,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
     // Size size = MediaQuery.of(context).size;
     return SafeArea(
         child: Scaffold(
-          resizeToAvoidBottomInset: false,
+          //resizeToAvoidBottomInset: false,
           backgroundColor: Colors.white,
           body: Center(
             child: SingleChildScrollView(
@@ -239,6 +239,15 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                       ),
                                     ),
                                     SizedBox(height: 20,),
+                                    // Row(
+                                    //   mainAxisAlignment: MainAxisAlignment.center,
+                                    //   children: [
+                                    //     Text(
+                                    //       "У вас еще нет аккаунта? ",
+                                    //       style: AppStyleText.textStyle_black,),
+                                    //     Text("Зарегестрироваться",
+                                    //       style: AppStyleText.textStyle_blue,),
+                                    //   ],)
                                   ],
                                 ),
                               ),
