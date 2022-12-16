@@ -44,6 +44,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                       SizedBox(height: 46,),
                       Center(child: ImageIcon(logo_registr, size: 90,color:AppColors.blue)),
                       Text("Регистрация",style: AppStyleText.textStyle_1,),
+                      SizedBox(height: 20,),
                       Container(
                         child: Column(
                           children: [
@@ -61,7 +62,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                         ),
                                         decoration: InputDecoration(
                                           border: InputBorder.none,
-                                          prefixIcon: Icon(Icons.accesi,color: AppColors.blue,size: 30,),
+                                          prefixIcon: Icon(Icons.accessibility_new,color: AppColors.blue,size: 30,),
                                           labelText: "Имя",
                                           labelStyle: TextStyle(
                                             fontSize: 18,
@@ -82,7 +83,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                         ),
                                         decoration: InputDecoration(
                                           border: InputBorder.none,
-                                          prefixIcon: Icon(Icons.lock,color: AppColors.blue,size: 32,),
+                                          prefixIcon: Icon(Icons.accessibility_new,color: AppColors.blue,size: 32,),
                                           labelText: "Фамилия",
                                           labelStyle: TextStyle(
                                             fontSize: 18,
@@ -103,7 +104,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                         ),
                                         decoration: InputDecoration(
                                           border: InputBorder.none,
-                                          prefixIcon: Icon(Icons.lock,color: AppColors.blue,size: 32,),
+                                          prefixIcon: Icon(Icons.accessibility_new,color: AppColors.blue,size: 32,),
                                           labelText: "Отчество",
                                           labelStyle: TextStyle(
                                             fontSize: 18,
@@ -124,7 +125,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                         ),
                                         decoration: InputDecoration(
                                           border: InputBorder.none,
-                                          prefixIcon: Icon(Icons.lock,color: AppColors.blue,size: 32,),
+                                          prefixIcon: Icon(Icons.email,color: AppColors.blue,size: 32,),
                                           labelText: "email",
                                           labelStyle: TextStyle(
                                             fontSize: 18,
@@ -145,7 +146,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                         ),
                                         decoration: InputDecoration(
                                           border: InputBorder.none,
-                                          prefixIcon: Icon(Icons.lock,color: AppColors.blue,size: 32,),
+                                          prefixIcon: Icon(Icons.card_travel,color: AppColors.blue,size: 32,),
                                           labelText: "Должность",
                                           labelStyle: TextStyle(
                                             fontSize: 18,
@@ -166,7 +167,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                         ),
                                         decoration: InputDecoration(
                                           border: InputBorder.none,
-                                          prefixIcon: Icon(Icons.lock,color: AppColors.blue,size: 32,),
+                                          prefixIcon: Icon(Icons.account_balance,color: AppColors.blue,size: 32,),
                                           labelText: "Организация",
                                           labelStyle: TextStyle(
                                             fontSize: 18,
@@ -187,7 +188,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                         ),
                                         decoration: InputDecoration(
                                           border: InputBorder.none,
-                                          prefixIcon: Icon(Icons.lock,color: AppColors.blue,size: 32,),
+                                          prefixIcon: Icon(Icons.person_outline,color: AppColors.blue,size: 32,),
                                           labelText: "Статус",
                                           labelStyle: TextStyle(
                                             fontSize: 18,
@@ -218,6 +219,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                         ),
                                       ),
                                     ),
+                                    SizedBox(height: 30,),
                                     Padding(
                                       padding: const EdgeInsets.all(3.0),
                                       child: SizedBox(height: 55,
@@ -229,23 +231,23 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                             fixedSize: Size.fromWidth(100),
                                             padding: EdgeInsets.all(5),
                                           ),
-                                          child: Text("Войти"),
+                                          child: Text("Зарегестрироваться"),
                                           onPressed: () {
                                             //Code Here
                                           },
                                         ),
                                       ),
                                     ),
-                                    SizedBox(height: 10,),
-                                    Row(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text(
-                                          "У вас еще нет аккаунта? ",
-                                          style: AppStyleText.textStyle_black,),
-                                        Text("Зарегестрироваться",
-                                          style: AppStyleText.textStyle_blue,),
-                                      ],)
+                                    SizedBox(height: 20,),
+                                    // Row(
+                                    //   mainAxisAlignment: MainAxisAlignment.center,
+                                    //   children: [
+                                    //     Text(
+                                    //       "У вас еще нет аккаунта? ",
+                                    //       style: AppStyleText.textStyle_black,),
+                                    //     Text("Зарегестрироваться",
+                                    //       style: AppStyleText.textStyle_blue,),
+                                    //   ],)
                                   ],
                                 ),
                               ),
