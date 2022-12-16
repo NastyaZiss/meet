@@ -72,11 +72,12 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                         ),
                                       ),
                                     ),
+
                                     SizedBox(height: 10,),
                                     Container(
                                       padding:  EdgeInsets.symmetric(horizontal: 10,vertical: 5),
                                       child: TextFormField(
-                                        obscureText: true,
+                                        // obscureText: true,
                                         style: TextStyle(color: AppColors.black,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 22,
@@ -97,7 +98,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                     Container(
                                       padding:  EdgeInsets.symmetric(horizontal: 10,vertical: 5),
                                       child: TextFormField(
-                                        obscureText: true,
+                                        // obscureText: true,
                                         style: TextStyle(color: AppColors.black,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 22,
@@ -118,7 +119,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                     Container(
                                       padding:  EdgeInsets.symmetric(horizontal: 10,vertical: 5),
                                       child: TextFormField(
-                                        obscureText: true,
+                                        // obscureText: true,
                                         style: TextStyle(color: AppColors.black,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 22,
@@ -139,7 +140,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                     Container(
                                       padding:  EdgeInsets.symmetric(horizontal: 10,vertical: 5),
                                       child: TextFormField(
-                                        obscureText: true,
+                                        // obscureText: true,
                                         style: TextStyle(color: AppColors.black,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 22,
@@ -160,7 +161,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                     Container(
                                       padding:  EdgeInsets.symmetric(horizontal: 10,vertical: 5),
                                       child: TextFormField(
-                                        obscureText: true,
+                                        // obscureText: true,
                                         style: TextStyle(color: AppColors.black,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 22,
@@ -181,7 +182,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                     Container(
                                       padding:  EdgeInsets.symmetric(horizontal: 10,vertical: 5),
                                       child: TextFormField(
-                                        obscureText: true,
+                                        // obscureText: true,
                                         style: TextStyle(color: AppColors.black,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 22,
@@ -202,7 +203,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                     Container(
                                       padding:  EdgeInsets.symmetric(horizontal: 10,vertical: 5),
                                       child: TextFormField(
-                                        obscureText: true,
+                                        // obscureText: true,
                                         style: TextStyle(color: AppColors.black,
                                           fontWeight: FontWeight.bold,
                                           fontSize: 22,
@@ -226,7 +227,6 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                         width: double.infinity,
                                         child:ElevatedButton(
                                           style: ElevatedButton.styleFrom(
-
                                             backgroundColor: AppColors.blue,
                                             fixedSize: Size.fromWidth(100),
                                             padding: EdgeInsets.all(5),
@@ -239,15 +239,6 @@ class _RegistrScreenState extends State<RegistrScreen> {
                                       ),
                                     ),
                                     SizedBox(height: 20,),
-                                    // Row(
-                                    //   mainAxisAlignment: MainAxisAlignment.center,
-                                    //   children: [
-                                    //     Text(
-                                    //       "У вас еще нет аккаунта? ",
-                                    //       style: AppStyleText.textStyle_black,),
-                                    //     Text("Зарегестрироваться",
-                                    //       style: AppStyleText.textStyle_blue,),
-                                    //   ],)
                                   ],
                                 ),
                               ),
