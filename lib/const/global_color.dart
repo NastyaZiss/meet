@@ -16,5 +16,7 @@ class AppColors {
 class AppStyleText {
   static TextStyle textStyle_1 = TextStyle(fontSize: 24, color: AppColors.black,fontWeight: FontWeight.w700);
   static TextStyle textStyle_red = TextStyle(fontSize: 12, color: AppColors.red,fontWeight: FontWeight.w700);
+  static TextStyle textStyle_black = TextStyle(fontSize: 10, color: Colors.grey,fontWeight: FontWeight.w700);
+  static TextStyle textStyle_blue = TextStyle(fontSize: 10, color: AppColors.blue,fontWeight: FontWeight.w700);
   static TextStyle textStyle_2 = TextStyle(fontSize: 24, color: AppColors.black,fontWeight: FontWeight.w700);
 }
