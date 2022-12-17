@@ -2,11 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:meet/screen/login_srceen.dart';
-import 'package:meet/screen/registr_screen.dart';
+import 'package:meet/presentation/screens/login_srceen.dart';
+import 'package:meet/presentation/screens/registr_screen.dart';
 
-
-import 'const/global_color.dart';
+import '../../core/const/global_color.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -19,9 +18,8 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   static const AssetImage logo_splash = AssetImage('assets/img/logo.png');
   Widget build(BuildContext context) {
-    Timer(Duration(seconds: 3), (){
-      Navigator.pushReplacement(context,
-          MaterialPageRoute(builder: (context)=> (RegistrScreen())));
+    Timer(Duration(seconds: 3), () {
+      Navigator.pushNamed(context, '/login');
     });
 
     return SafeArea(
@@ -29,12 +27,15 @@ class _SplashScreenState extends State<SplashScreen> {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Center(child: ImageIcon(logo_splash, size: 150,color:AppColors.blue)),
-            SizedBox(height: 80,)
+            Center(
+                child:
+                    ImageIcon(logo_splash, size: 150, color: AppColors.blue)),
+            SizedBox(
+              height: 80,
+            )
           ],
         ),
       ),
     );
   }
 }
-
