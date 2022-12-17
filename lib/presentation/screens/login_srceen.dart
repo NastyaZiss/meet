@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meet/data/datasources/firebase_auth/firebase_auth_login.dart';
+import 'package:meet/presentation/bloc/bloc/firebase_auth_bloc.dart';
 
 import '../../core/const/global_color.dart';
 import '../../core/const/global_color.dart';
@@ -107,16 +109,22 @@ class _LoginScreenState extends State<LoginScreen> {
                                   fixedSize: Size.fromWidth(100),
                                   padding: EdgeInsets.all(5),
                                 ),
-                                child: Text(
-                                  "Войти",
-                                  style: TextStyle(fontSize: 20),
+                                child: BlocBuilder<FirebaseAuthBloc,
+                                    FirebaseAuthLoginState>(
+                                  builder: (context, state) {
+                                    return Text(
+                                      "Войти",
+                                      style: TextStyle(fontSize: 20),
+                                    );
+                                  },
                                 ),
                                 onPressed: () {
-                                  FirebaseAuthClass()
-                                      .signInWithEmailAndPassword(
-                                    emailController,
-                                    passwordController,
-                                  );
+                                  context
+                                      .read<FirebaseAuthBloc>()
+                                      .add(FirebaseAuthLoginEvent(
+                                        email: emailController.text,
+                                        password: passwordController.text,
+                                      ));
                                 },
                               ),
                             ),
