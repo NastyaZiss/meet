@@ -43,7 +43,7 @@ class _RegistrScreenState extends State<RegistrScreen> {
                     children: [
                       SizedBox(height: 46,),
                       Center(child: ImageIcon(logo_registr, size: 90,color:AppColors.blue)),
-                      Text("Регистрация",style: AppStyleText.textStyle_1,),
+                      Text("Регистрация", style: AppStyleText.textStyle_1,),
                       SizedBox(height: 20,),
                       Container(
                         child: Column(

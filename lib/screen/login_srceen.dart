@@ -22,7 +22,6 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-
             Center(child: ImageIcon(logo_registr, size: 90,color:AppColors.blue)),
             Container(
               child: Column(

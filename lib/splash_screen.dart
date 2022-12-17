@@ -2,10 +2,12 @@ import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:meet/screen/home_screen.dart';
 import 'package:meet/screen/login_srceen.dart';
 import 'package:meet/screen/registr_screen.dart';
 
 
+import 'bottom_bar.dart';
 import 'const/global_color.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -21,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     Timer(Duration(seconds: 3), (){
       Navigator.pushReplacement(context,
-          MaterialPageRoute(builder: (context)=> (RegistrScreen())));
+          MaterialPageRoute(builder: (context)=> (BottomBar())));
     });
 
     return SafeArea(
