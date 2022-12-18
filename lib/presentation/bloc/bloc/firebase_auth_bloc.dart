@@ -8,9 +8,16 @@ part 'firebase_auth_state.dart';
 
 class FirebaseAuthBloc
     extends Bloc<FirebaseAuthLoginEvent, FirebaseAuthLoginState> {
-  FirebaseAuthBloc() : super(FirebaseAuthLoginState()) {
-    on<FirebaseAuthLoginEvent>((event, emit) {
-      SignInWithEmailParams(email: event.email, password: event.password);
+  SignInWithEmail signInWithEmail;
+
+  FirebaseAuthBloc({required this.signInWithEmail})
+      : super(FirebaseAuthLoginState()) {
+    on<FirebaseAuthLoginEvent>((event, emit) async {
+      final instance = await signInWithEmail(
+          SignInWithEmailParams(email: event.email, password: event.password));
+      if (instance != null) {
+        emit(state.copyWith(success: true));
+      }
     });
   }
 }

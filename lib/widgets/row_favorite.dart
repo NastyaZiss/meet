@@ -1,7 +1,7 @@
 //виджет верхний  с иконкой юзера, находится на всех основныых экранах
 
 import 'package:flutter/cupertino.dart';
-import 'package:meet/const/global_color.dart';
+import 'package:meet/core/custom_widgets/const/global_color.dart';
 
 class RowFavorite extends StatelessWidget {
   const RowFavorite({Key? key}) : super(key: key);
@@ -13,10 +13,12 @@ class RowFavorite extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            height: 50,width: 200,
+            height: 50,
+            width: 200,
             child: Image.asset("assets/img/text_favorite.png"),
           )
-      ],),
+        ],
+      ),
     );
   }
 }

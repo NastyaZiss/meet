@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:meet/presentation/screens/login_srceen.dart';
 import 'package:meet/presentation/screens/registr_screen.dart';
 
-import '../../core/const/global_color.dart';
+import '../../core/custom_widgets/const/global_color.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

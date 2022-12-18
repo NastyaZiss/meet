@@ -1,7 +1,7 @@
 //виджет верхний  с иконкой юзера, находится на всех основныых экранах
 
 import 'package:flutter/cupertino.dart';
-import 'package:meet/const/global_color.dart';
+import 'package:meet/core/custom_widgets/const/global_color.dart';
 
 class RowAcc extends StatelessWidget {
   static const AssetImage icon_acc = AssetImage('assets/img/icon_acc.png');
@@ -16,12 +16,20 @@ class RowAcc extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              Container(height: 30,width: 150,
-                child: Image.asset("assets/img/text_logo.png"),),
+              Container(
+                height: 30,
+                width: 150,
+                child: Image.asset("assets/img/text_logo.png"),
+              ),
             ],
           ),
-        ImageIcon(icon_acc,size: 40,color: AppColors.blue,)
-      ],),
+          ImageIcon(
+            icon_acc,
+            size: 40,
+            color: AppColors.blue,
+          )
+        ],
+      ),
     );
   }
 }

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../core/const/global_color.dart';
-import '../../core/const/global_color.dart';
+import 'package:meet/core/custom_widgets/const/global_color.dart';
 
 class RegistrScreen extends StatefulWidget {
   const RegistrScreen({Key? key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:meet/const/global_color.dart';
+import 'package:meet/core/custom_widgets/const/global_color.dart';
 //карточка мероприятия
 
 class MeetCardWidget extends StatelessWidget {
@@ -12,10 +12,9 @@ class MeetCardWidget extends StatelessWidget {
       height: 100,
       width: 180,
       decoration: BoxDecoration(
-        // color: AppColors.meet_card,
-        color: Colors.red,
-      borderRadius: BorderRadius.circular(30)
-    ),
+          // color: AppColors.meet_card,
+          color: Colors.red,
+          borderRadius: BorderRadius.circular(30)),
     );
   }
 }

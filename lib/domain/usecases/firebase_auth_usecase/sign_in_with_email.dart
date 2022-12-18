@@ -6,7 +6,7 @@ class SignInWithEmail
     extends UseCase<FirebaseAuthRepository, SignInWithEmailParams> {
   final FirebaseAuthRepository firebaseAuthRepository;
 
-  SignInWithEmail(this.firebaseAuthRepository);
+  SignInWithEmail({required this.firebaseAuthRepository});
 
   call(SignInWithEmailParams params) async {
     return await firebaseAuthRepository.signInWithEmailAndPassword(

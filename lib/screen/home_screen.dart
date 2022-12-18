@@ -1,25 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:meet/core/custom_widgets/const/global_color.dart';
 import 'package:meet/widgets/meet_card_widget.dart';
 import 'package:meet/widgets/row_acc.dart';
-
-import '../const/global_color.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Scaffold(
-          body: Column(
+    return Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
             children: [
               RowAcc(),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               SearchWidget(),
 
-              //ContentPartWidgets(),
+              // ContentPartWidgets(),
             ],
           ),
         ),
@@ -34,20 +35,25 @@ class SearchWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
       decoration: BoxDecoration(
-        borderRadius:  BorderRadius.circular(10),
-        color: const  Color(0xfff4f6fd),
+        borderRadius: BorderRadius.circular(10),
+        color: const Color(0xfff4f6fd),
       ),
-      padding: const EdgeInsets.symmetric(horizontal: 12,vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
       child: Row(
-      children: [
-        Icon(
-        Icons.search_outlined,
-        color: Color(0xffbfc205),),
-        SizedBox(width: 5,),
-        Text("Искать",
-          style: AppStyleText.textStyle_input_search,),
+        children: [
+          Icon(
+            Icons.search_outlined,
+            color: Color(0xffbfc205),
+          ),
+          SizedBox(
+            width: 5,
+          ),
+          Text(
+            "Искать",
+            style: AppStyleText.textStyle_2,
+          ),
         ],
       ),
     );

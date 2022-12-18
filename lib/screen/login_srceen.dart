@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../const/global_color.dart';
-import '../const/global_color.dart';
+import 'package:meet/core/custom_widgets/const/global_color.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -22,7 +20,9 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Center(child: ImageIcon(logo_registr, size: 90,color:AppColors.blue)),
+            Center(
+                child:
+                    ImageIcon(logo_registr, size: 90, color: AppColors.blue)),
             Container(
               child: Column(
                 children: [
@@ -31,17 +31,22 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Container(
                       child: Column(
                         children: [
-
                           Container(
-                            padding:  EdgeInsets.symmetric(horizontal: 10,vertical: 5),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 10, vertical: 5),
                             child: TextFormField(
-                              style: TextStyle(color: AppColors.black,
+                              style: TextStyle(
+                                color: AppColors.black,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 22,
                               ),
                               decoration: InputDecoration(
                                 border: InputBorder.none,
-                                prefixIcon: Icon(Icons.mail,color: AppColors.blue,size: 30,),
+                                prefixIcon: Icon(
+                                  Icons.mail,
+                                  color: AppColors.blue,
+                                  size: 30,
+                                ),
                                 labelText: "Email",
                                 labelStyle: TextStyle(
                                   fontSize: 18,
@@ -51,18 +56,26 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                           ),
-                          SizedBox(height: 10,),
+                          SizedBox(
+                            height: 10,
+                          ),
                           Container(
-                            padding:  EdgeInsets.symmetric(horizontal: 10,vertical: 5),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 10, vertical: 5),
                             child: TextFormField(
                               obscureText: true,
-                              style: TextStyle(color: AppColors.black,
+                              style: TextStyle(
+                                color: AppColors.black,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 22,
                               ),
                               decoration: InputDecoration(
                                 border: InputBorder.none,
-                                prefixIcon: Icon(Icons.lock,color: AppColors.blue,size: 32,),
+                                prefixIcon: Icon(
+                                  Icons.lock,
+                                  color: AppColors.blue,
+                                  size: 32,
+                                ),
                                 labelText: "Пароль",
                                 labelStyle: TextStyle(
                                   fontSize: 18,
@@ -75,39 +88,52 @@ class _LoginScreenState extends State<LoginScreen> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                            TextButton(
-                              onPressed: (){},
-                              child: Text("Забыли пароль?", style: AppStyleText.textStyle_red,),
-                            )],),
-                          SizedBox(height: 10,),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "Забыли пароль?",
+                                  style: AppStyleText.textStyle_red,
+                                ),
+                              )
+                            ],
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
                           Padding(
                             padding: const EdgeInsets.all(3.0),
-                            child: SizedBox(height: 55,
-                            width: double.infinity,
-                            child:ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-
-                                backgroundColor: AppColors.blue,
-                                fixedSize: Size.fromWidth(100),
-                                padding: EdgeInsets.all(5),
+                            child: SizedBox(
+                              height: 55,
+                              width: double.infinity,
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: AppColors.blue,
+                                  fixedSize: Size.fromWidth(100),
+                                  padding: EdgeInsets.all(5),
+                                ),
+                                child: Text("Войти"),
+                                onPressed: () {
+                                  //Code Here
+                                },
                               ),
-                              child: Text("Войти"),
-                              onPressed: () {
-                                //Code Here
-                              },
-                            ),
                             ),
                           ),
-                          SizedBox(height: 10,),
+                          SizedBox(
+                            height: 10,
+                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                            Text(
-                              "У вас еще нет аккаунта? ",
-                              style: AppStyleText.textStyle_black,),
-                            Text("Зарегестрироваться",
-                              style: AppStyleText.textStyle_blue,),
-                          ],)
+                              Text(
+                                "У вас еще нет аккаунта? ",
+                                style: AppStyleText.textStyle_black,
+                              ),
+                              Text(
+                                "Зарегестрироваться",
+                                style: AppStyleText.textStyle_blue,
+                              ),
+                            ],
+                          )
                         ],
                       ),
                     ),

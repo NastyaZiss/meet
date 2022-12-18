@@ -6,7 +6,7 @@ class CreateUserWithEmailPassword
     extends UseCase<FirebaseAuthRepository, CreateUserWithEmailPasswordParams> {
   final FirebaseAuthRepository firebaseAuthRepository;
 
-  CreateUserWithEmailPassword(this.firebaseAuthRepository);
+  CreateUserWithEmailPassword({required this.firebaseAuthRepository});
 
   call(CreateUserWithEmailPasswordParams params) async {
     return await firebaseAuthRepository.createUserWithEmailAndPassword(
